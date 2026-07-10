@@ -243,6 +243,12 @@
                   <td><strong>8 h</strong></td>
                   <td><i class="fa-solid fa-chevron-right"></i></td>
                 </tr>
+                <tr class="cost-row" data-cost-target="api">
+                  <td><strong>API-Gebühren (GPT-4o mini)</strong></td>
+                  <td>OpenAI API</td>
+                  <td><strong>$0,000975</strong></td>
+                  <td><i class="fa-solid fa-chevron-right"></i></td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -316,6 +322,29 @@
                 <li><strong>Zuständig:</strong> Hasan Ates</li>
                 <li><strong>Erfasste Arbeitszeit:</strong> <strong>8 Stunden</strong></li>
                 <li><strong>Details:</strong> Integration der Projekt-Recherche, der BWL-Stundenanalyse, App-Screenshots und interaktiver Demos (Karteikarten-Flip).</li>
+              </ul>
+            </div>
+
+            <!-- API DETAILS -->
+            <div class="card cost-detail-card" id="details-api" style="display: none;">
+              <div class="card-title" style="color: var(--color-secondary);">
+                <i class="fa-solid fa-calculator"></i>
+                <span>GPT-4o mini API-Kosten (USD)</span>
+              </div>
+              <ul class="bullet-list" style="font-size: 0.85rem; margin-bottom: 0;">
+                <li><strong>Modellpreise (OpenAI):</strong><br>
+                  • Input-Tokens: <strong>$0.15</strong> per 1M Tokens (~750k Wörter)<br>
+                  • Output-Tokens: <strong>$0.60</strong> per 1M Tokens
+                </li>
+                <li><strong>Kosten pro Vokabel-Generierung (20 Wörter):</strong><br>
+                  • Input (Prompt): ~500 Tokens -> $0.000075<br>
+                  • Output (JSON): ~1.500 Tokens -> $0.000900<br>
+                  • <strong>Gesamt pro Session: $0.000975 (ca. 0,1 Cent!)</strong>
+                </li>
+                <li><strong>Skalierungs-Beispiel für Schulen:</strong><br>
+                  • 1 Schüler (30 Sets/Monat): <strong>$0.029 (ca. 3 Cent)</strong> / Monat<br>
+                  • 1.000 Schüler / Jahr (360k Abfragen): <strong>$351.00 / Jahr</strong>
+                </li>
               </ul>
             </div>
 
