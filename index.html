@@ -351,77 +351,125 @@
           </div>
         </div>
       </section>
-      <!-- SLIDE 6 (NEW): PROJEKTMANAGEMENT (TRELLO) -->
+      <!-- SLIDE 6: PROJEKTMANAGEMENT (TRELLO) -->
       <section class="slide" data-slide-id="5">
         <header class="slide-header">
           <span class="slide-category">04. Projektmanagement</span>
-          <h2 class="slide-title">Kanban-Board & Aufgabenverteilung (Trello)</h2>
+          <h2 class="slide-title">Kanban-Board & Aufgabenverteilung</h2>
         </header>
         <div class="grid-3col equal animate-slide-up delay-1" style="height: calc(100% - 4.5rem); gap: 1rem; align-items: start;">
           
           <!-- HASAN ATES COLUMN -->
-          <div class="card" style="background: rgba(255, 255, 255, 0.01); border-color: rgba(99, 102, 241, 0.1); height: 100%; display: flex; flex-direction: column; overflow: hidden; padding: 0.8rem;">
-            <div class="card-title" style="color: var(--color-primary); font-size: 1rem; margin-bottom: 0.5rem; justify-content: center; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem;">
+          <div class="kanban-column">
+            <div class="kanban-column-header" style="color: var(--color-primary);">
               <i class="fa-solid fa-user-tie"></i>
               <span>Hasan Ates</span>
             </div>
-            <div style="flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 0.8rem; padding-right: 0.2rem;">
-              <div class="screenshot-card" style="background: rgba(255, 255, 255, 0.02); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.05); padding: 0.4rem; cursor: zoom-in;">
-                <img class="screenshot-img" src="assets/trello_database.png" alt="Trello: Database Documentation" style="width: 100%; border-radius: 4px;" />
-                <div class="screenshot-caption" style="display: none;">Hasan Ates: Database Documentation (ERM, Relations)</div>
+            <div class="kanban-cards-container">
+              
+              <div class="kanban-card">
+                <div class="kanban-card-title">Datenbank & ERM-Doku</div>
+                <div class="kanban-card-desc">Entwurf des relationalen Datenbankschemas, ER-Modellierung & referentielle Integrität.</div>
+                <div class="kanban-card-meta">
+                  <span class="kanban-card-time"><i class="fa-solid fa-clock"></i> 6 h</span>
+                  <span class="cost-badge school" style="padding: 0.15rem 0.4rem; font-size: 0.65rem; background: rgba(20, 184, 166, 0.1); color: var(--color-accent); border: 1px solid rgba(20, 184, 166, 0.2);">Erledigt</span>
+                </div>
               </div>
-              <div class="screenshot-card" style="background: rgba(255, 255, 255, 0.02); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.05); padding: 0.4rem; cursor: zoom-in;">
-                <img class="screenshot-img" src="assets/trello_presentation.png" alt="Trello: Presentation" style="width: 100%; border-radius: 4px;" />
-                <div class="screenshot-caption" style="display: none;">Hasan Ates: Abschlusspräsentation</div>
+
+              <div class="kanban-card">
+                <div class="kanban-card-title">Abschlusspräsentation</div>
+                <div class="kanban-card-desc">Konzeption, Design, Code und Erstellung dieser interaktiven HTML-Präsentation.</div>
+                <div class="kanban-card-meta">
+                  <span class="kanban-card-time"><i class="fa-solid fa-clock"></i> 8 h</span>
+                  <span class="cost-badge school" style="padding: 0.15rem 0.4rem; font-size: 0.65rem; background: rgba(20, 184, 166, 0.1); color: var(--color-accent); border: 1px solid rgba(20, 184, 166, 0.2);">Erledigt</span>
+                </div>
               </div>
-              <div class="screenshot-card" style="background: rgba(255, 255, 255, 0.02); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.05); padding: 0.4rem; cursor: zoom-in;">
-                <img class="screenshot-img" src="assets/trello_dev_stack.png" alt="Trello: Development Stack" style="width: 100%; border-radius: 4px;" />
-                <div class="screenshot-caption" style="display: none;">Hasan, Alex, Boris: Development stack configuration</div>
+
+              <div class="kanban-card">
+                <div class="kanban-card-title">Development Stack</div>
+                <div class="kanban-card-desc">Gemeinsame Konfiguration und Setup der lokalen Arbeitsumgebung mit React, Vite, FastAPI.</div>
+                <div class="kanban-card-meta">
+                  <span class="kanban-card-time"><i class="fa-solid fa-clock"></i> Shared</span>
+                  <span class="cost-badge school" style="padding: 0.15rem 0.4rem; font-size: 0.65rem; background: rgba(20, 184, 166, 0.1); color: var(--color-accent); border: 1px solid rgba(20, 184, 166, 0.2);">Erledigt</span>
+                </div>
               </div>
+
             </div>
           </div>
 
           <!-- ALEX COLUMN -->
-          <div class="card" style="background: rgba(255, 255, 255, 0.01); border-color: rgba(99, 102, 241, 0.1); height: 100%; display: flex; flex-direction: column; overflow: hidden; padding: 0.8rem;">
-            <div class="card-title" style="color: var(--color-accent); font-size: 1rem; margin-bottom: 0.5rem; justify-content: center; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem;">
+          <div class="kanban-column">
+            <div class="kanban-column-header" style="color: var(--color-accent);">
               <i class="fa-solid fa-user-pen"></i>
               <span>Olexandr Sokaliuk</span>
             </div>
-            <div style="flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 0.8rem; padding-right: 0.2rem;">
-              <div class="screenshot-card" style="background: rgba(255, 255, 255, 0.02); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.05); padding: 0.4rem; cursor: zoom-in;">
-                <img class="screenshot-img" src="assets/trello_gui_design.png" alt="Trello: GUI Design (Figma)" style="width: 100%; border-radius: 4px;" />
-                <div class="screenshot-caption" style="display: none;">Olexandr Sokaliuk: GUI Design (Figma) - 4h</div>
+            <div class="kanban-cards-container">
+
+              <div class="kanban-card">
+                <div class="kanban-card-title">GUI Design (Figma)</div>
+                <div class="kanban-card-desc">UI-Konzeption, Entwurf der Benutzeroberfläche und Erstellung der Figma Wireframes.</div>
+                <div class="kanban-card-meta">
+                  <span class="kanban-card-time"><i class="fa-solid fa-clock"></i> 4 h</span>
+                  <span class="cost-badge school" style="padding: 0.15rem 0.4rem; font-size: 0.65rem; background: rgba(20, 184, 166, 0.1); color: var(--color-accent); border: 1px solid rgba(20, 184, 166, 0.2);">Erledigt</span>
+                </div>
               </div>
-              <div class="screenshot-card" style="background: rgba(255, 255, 255, 0.02); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.05); padding: 0.4rem; cursor: zoom-in;">
-                <img class="screenshot-img" src="assets/trello_product_programming.png" alt="Trello: Product Programming" style="width: 100%; border-radius: 4px;" />
-                <div class="screenshot-caption" style="display: none;">Olexandr Sokaliuk: Product Programming (React-Frontend)</div>
+
+              <div class="kanban-card">
+                <div class="kanban-card-title">Product Programming</div>
+                <div class="kanban-card-desc">Codierung des React-Frontends mit TypeScript, Zustand-State-Management und SCSS modules.</div>
+                <div class="kanban-card-meta">
+                  <span class="kanban-card-time"><i class="fa-solid fa-clock"></i> 16 h</span>
+                  <span class="cost-badge school" style="padding: 0.15rem 0.4rem; font-size: 0.65rem; background: rgba(20, 184, 166, 0.1); color: var(--color-accent); border: 1px solid rgba(20, 184, 166, 0.2);">Erledigt</span>
+                </div>
               </div>
-              <div class="screenshot-card" style="background: rgba(255, 255, 255, 0.02); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.05); padding: 0.4rem; cursor: zoom-in;">
-                <img class="screenshot-img" src="assets/trello_create_logo.png" alt="Trello: Create Logo" style="width: 100%; border-radius: 4px;" />
-                <div class="screenshot-caption" style="display: none;">Olexandr Sokaliuk: Create Logo / Design assets</div>
+
+              <div class="kanban-card">
+                <div class="kanban-card-title">Create Logo</div>
+                <div class="kanban-card-desc">Design des Markenlogos und Anpassung der Grafik-Assets für die Web-Plattform.</div>
+                <div class="kanban-card-meta">
+                  <span class="kanban-card-time"><i class="fa-solid fa-clock"></i> 2 h</span>
+                  <span class="cost-badge school" style="padding: 0.15rem 0.4rem; font-size: 0.65rem; background: rgba(20, 184, 166, 0.1); color: var(--color-accent); border: 1px solid rgba(20, 184, 166, 0.2);">Erledigt</span>
+                </div>
               </div>
-              <div class="screenshot-card" style="background: rgba(255, 255, 255, 0.02); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.05); padding: 0.4rem; cursor: zoom-in;">
-                <img class="screenshot-img" src="assets/trello_frontend_repo.png" alt="Trello: Frontend Repo Setup" style="width: 100%; border-radius: 4px;" />
-                <div class="screenshot-caption" style="display: none;">Olexandr Sokaliuk: Frontend Repository Setup</div>
+
+              <div class="kanban-card">
+                <div class="kanban-card-title">Frontend Repo Setup</div>
+                <div class="kanban-card-desc">Initialisierung des Git-Repositories und Integration des Technologie-Stacks.</div>
+                <div class="kanban-card-meta">
+                  <span class="kanban-card-time"><i class="fa-solid fa-clock"></i> 1 h</span>
+                  <span class="cost-badge school" style="padding: 0.15rem 0.4rem; font-size: 0.65rem; background: rgba(20, 184, 166, 0.1); color: var(--color-accent); border: 1px solid rgba(20, 184, 166, 0.2);">Erledigt</span>
+                </div>
               </div>
+
             </div>
           </div>
 
           <!-- BORIS COLUMN -->
-          <div class="card" style="background: rgba(255, 255, 255, 0.01); border-color: rgba(99, 102, 241, 0.1); height: 100%; display: flex; flex-direction: column; overflow: hidden; padding: 0.8rem;">
-            <div class="card-title" style="color: var(--color-secondary); font-size: 1rem; margin-bottom: 0.5rem; justify-content: center; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem;">
+          <div class="kanban-column">
+            <div class="kanban-column-header" style="color: var(--color-secondary);">
               <i class="fa-solid fa-user-gear"></i>
               <span>Boris Bulatov</span>
             </div>
-            <div style="flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 0.8rem; padding-right: 0.2rem;">
-              <div class="screenshot-card" style="background: rgba(255, 255, 255, 0.02); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.05); padding: 0.4rem; cursor: zoom-in;">
-                <img class="screenshot-img" src="assets/trello_research_ai.png" alt="Trello: Research AI possibilities" style="width: 100%; border-radius: 4px;" />
-                <div class="screenshot-caption" style="display: none;">Boris Bulatov: Research AI possibilities (OpenAI setup)</div>
+            <div class="kanban-cards-container">
+
+              <div class="kanban-card">
+                <div class="kanban-card-title">Research AI Possibilities</div>
+                <div class="kanban-card-desc">Recherche zu Modellen (inkl. on-prem), OpenAI Setup, API-Key Konfiguration & Tests.</div>
+                <div class="kanban-card-meta">
+                  <span class="kanban-card-time"><i class="fa-solid fa-clock"></i> 4 h</span>
+                  <span class="cost-badge school" style="padding: 0.15rem 0.4rem; font-size: 0.65rem; background: rgba(20, 184, 166, 0.1); color: var(--color-accent); border: 1px solid rgba(20, 184, 166, 0.2);">Erledigt</span>
+                </div>
               </div>
-              <div class="screenshot-card" style="background: rgba(255, 255, 255, 0.02); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.05); padding: 0.4rem; cursor: zoom-in;">
-                <img class="screenshot-img" src="assets/trello_backend_endpoints.png" alt="Trello: Backend Endpoints" style="width: 100%; border-radius: 4px;" />
-                <div class="screenshot-caption" style="display: none;">Boris Bulatov: Backend API Endpoints (FastAPI)</div>
+
+              <div class="kanban-card">
+                <div class="kanban-card-title">Backend Endpoints</div>
+                <div class="kanban-card-desc">Entwicklung der REST-API Endpunkte, OpenAI Wortgenerierung & SQLite Integration.</div>
+                <div class="kanban-card-meta">
+                  <span class="kanban-card-time"><i class="fa-solid fa-clock"></i> 12 h</span>
+                  <span class="cost-badge school" style="padding: 0.15rem 0.4rem; font-size: 0.65rem; background: rgba(20, 184, 166, 0.1); color: var(--color-accent); border: 1px solid rgba(20, 184, 166, 0.2);">Erledigt</span>
+                </div>
               </div>
+
             </div>
           </div>
 
