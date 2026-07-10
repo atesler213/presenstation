@@ -195,52 +195,52 @@
       <section class="slide" data-slide-id="4">
         <header class="slide-header">
           <span class="slide-category">03. BWL-Analyse</span>
-          <h2 class="slide-title">Wirtschaftliche Aspekte: Kostenanalyse (3-Azubi Projekt)</h2>
+          <h2 class="slide-title">Wirtschaftliche Aspekte: Projekt-Arbeitsstunden (3-Azubi Projekt)</h2>
         </header>
         <div class="grid-2col equal animate-slide-up delay-1" style="height: calc(100% - 4.5rem); align-items: start;">
           <div>
             <p style="margin-bottom: 0.8rem; font-size: 0.85rem;">
-              Die wirtschaftliche Rentabilität eines KI-Systems hängt stark von den Entwicklungs-, Integrations- und laufenden Betriebskosten ab. 
+              Da die Entwicklung intern durch 3 Auszubildende durchgeführt wurde, fallen keine externen Dienstleisterkosten an. Hier ist die Aufteilung der geleisteten Arbeitsstunden:
               <strong>(Klicken Sie auf eine Zeile für Details)</strong>
             </p>
             <table class="cost-table">
               <thead>
                 <tr>
-                  <th>Kategorie</th>
-                  <th>Art</th>
-                  <th>Kosten (Est.)</th>
+                  <th>Aufgabe / Phase</th>
+                  <th>Mitglied</th>
+                  <th>Zeitaufwand</th>
                   <th></th>
                 </tr>
               </thead>
               <tbody>
-                <tr class="cost-row active" data-cost-target="capex">
-                  <td><strong>CapEx (Entwicklung)</strong></td>
-                  <td><span class="cost-badge cap">Einmalig</span></td>
-                  <td><strong>0 €</strong></td>
+                <tr class="cost-row active" data-cost-target="figma">
+                  <td><strong>GUI Design (Figma)</strong></td>
+                  <td>Alex</td>
+                  <td><strong>4 h</strong></td>
                   <td><i class="fa-solid fa-chevron-right"></i></td>
                 </tr>
-                <tr class="cost-row" data-cost-target="hosting">
-                  <td><strong>OpEx (Hosting)</strong></td>
-                  <td><span class="cost-badge op">Laufend</span></td>
-                  <td><strong>~5 € / Mo.</strong></td>
+                <tr class="cost-row" data-cost-target="frontend">
+                  <td><strong>Product Programming</strong></td>
+                  <td>Alex</td>
+                  <td><strong>16 h</strong></td>
                   <td><i class="fa-solid fa-chevron-right"></i></td>
                 </tr>
-                <tr class="cost-row" data-cost-target="api">
-                  <td><strong>API-Gebühren</strong></td>
-                  <td><span class="cost-badge op">Laufend</span></td>
-                  <td><strong>~0,1 Cent</strong></td>
+                <tr class="cost-row" data-cost-target="backend">
+                  <td><strong>Backend Endpoints</strong></td>
+                  <td>Boris</td>
+                  <td><strong>12 h</strong></td>
                   <td><i class="fa-solid fa-chevron-right"></i></td>
                 </tr>
-                <tr class="cost-row" data-cost-target="schulung">
-                  <td><strong>Schulung (Setup)</strong></td>
-                  <td><span class="cost-badge school">Einmalig</span></td>
-                  <td><strong>0 €</strong></td>
+                <tr class="cost-row" data-cost-target="database">
+                  <td><strong>Datenbank & ERM-Doku</strong></td>
+                  <td>Hasan Ateş</td>
+                  <td><strong>6 h</strong></td>
                   <td><i class="fa-solid fa-chevron-right"></i></td>
                 </tr>
-                <tr class="cost-row" data-cost-target="wartung">
-                  <td><strong>Wartung & Support</strong></td>
-                  <td><span class="cost-badge op">Laufend</span></td>
-                  <td><strong>0 €</strong></td>
+                <tr class="cost-row" data-cost-target="presentation">
+                  <td><strong>Abschlusspräsentation</strong></td>
+                  <td>Hasan Ateş</td>
+                  <td><strong>8 h</strong></td>
                   <td><i class="fa-solid fa-chevron-right"></i></td>
                 </tr>
               </tbody>
@@ -249,103 +249,73 @@
           
           <div style="position: relative; height: 100%; width: 100%;">
             
-            <!-- CAPEX DETAILS -->
-            <div class="card cost-detail-card active" id="details-capex">
+            <!-- FIGMA DETAILS -->
+            <div class="card cost-detail-card active" id="details-figma">
               <div class="card-title" style="color: var(--color-primary);">
-                <i class="fa-solid fa-laptop-code"></i>
-                <span>CapEx: 3-Azubi Eigenentwicklung</span>
+                <i class="fa-brands fa-figma"></i>
+                <span>GUI Design & Wireframes</span>
               </div>
               <ul class="bullet-list" style="font-size: 0.85rem; margin-bottom: 0;">
-                <li><strong>Eigenentwicklung im Team:</strong><br>
-                  • Projektarbeit von 3 Auszubildenden (Fachinformatiker Systemintegration/Anwendungsentwicklung) im 2. Lehrjahr.<br>
-                  • <strong>Externe Entwicklerkosten: 0 €</strong>
-                </li>
-                <li><strong>Infrastruktur & Hardware:</strong><br>
-                  • Nutzung bestehender Firmenrechner & Schul-PCs.<br>
-                  • Kostenfreie Open-Source Software (VS Code, Git, Python).
-                </li>
-                <li><strong>Zusätzliche Anschaffungskosten: 0 €</strong><br>
-                  • Einziger Aufwand ist die reguläre Ausbildungszeit (ohne Zusatzkosten).
-                </li>
+                <li><strong>Aufgabe:</strong> UI-Konzeption, Entwurf des User Interface und Erstellung der Wireframes in Figma.</li>
+                <li><strong>Zuständig:</strong> Alex (Olexandr Sokaliuk)</li>
+                <li><strong>Erfasste Arbeitszeit:</strong> <strong>4 Stunden</strong> (Figma Wireframe)</li>
+                <li><strong>Fokus:</strong> Erstellung eines klaren, ansprechenden Wireframes für das Vokabeltrainer-Interface vor Beginn der Programmierung.</li>
               </ul>
             </div>
 
-            <!-- HOSTING DETAILS -->
-            <div class="card cost-detail-card" id="details-hosting" style="display: none;">
+            <!-- FRONTEND DETAILS -->
+            <div class="card cost-detail-card" id="details-frontend" style="display: none;">
               <div class="card-title" style="color: var(--color-accent);">
-                <i class="fa-solid fa-server"></i>
-                <span>OpEx: Kostengünstiges Hosting</span>
+                <i class="fa-solid fa-code"></i>
+                <span>Product Programming (React)</span>
               </div>
               <ul class="bullet-list" style="font-size: 0.85rem; margin-bottom: 0;">
-                <li><strong>Frontend Hosting (Vercel):</strong><br>
-                  • Deployment des React Frontends auf dem <strong>Vercel Hobby Plan: 0 € / Monat</strong>.
-                </li>
-                <li><strong>Backend API & DB (Railway / Render):</strong><br>
-                  • Deployment des FastAPI Backends + SQLite Datenbank auf Render (Hobby Instance): <strong>~5 € / Monat</strong>.
-                </li>
-                <li><strong>Domain & DNS:</strong><br>
-                  • Nutzung einer Subdomain der Schule/des Ausbildungsbetriebs: <strong>0 €</strong>.
-                </li>
-                <li><strong>Gesamtes Cloud-Hosting: ~5 € / Monat (extrem günstig)</strong></li>
+                <li><strong>Aufgabe:</strong> Codierung des Frontends mit React 19, TypeScript, Zustand (State Management) und SCSS Modules.</li>
+                <li><strong>Zuständig:</strong> Alex (Olexandr Sokaliuk)</li>
+                <li><strong>Erfasste Arbeitszeit:</strong> <strong>16 Stunden</strong></li>
+                <li><strong>Fokus:</strong> Implementierung der Benutzeroberfläche nach Feature-Sliced Design (FSD) Richtlinien und Integration lokaler MSW Mock APIs.</li>
               </ul>
             </div>
 
-            <!-- API DETAILS -->
-            <div class="card cost-detail-card" id="details-api" style="display: none;">
+            <!-- BACKEND DETAILS -->
+            <div class="card cost-detail-card" id="details-backend" style="display: none;">
               <div class="card-title" style="color: var(--color-secondary);">
-                <i class="fa-solid fa-calculator"></i>
-                <span>GPT-4o mini API-Kosten</span>
+                <i class="fa-solid fa-server"></i>
+                <span>Backend Endpoints (FastAPI)</span>
               </div>
               <ul class="bullet-list" style="font-size: 0.85rem; margin-bottom: 0;">
-                <li><strong>Modellpreise (OpenAI):</strong><br>
-                  • Input-Tokens: <strong>$0,15</strong> per 1M Tokens (~750k Wörter)<br>
-                  • Output-Tokens: <strong>$0,60</strong> per 1M Tokens
-                </li>
-                <li><strong>Kosten pro Vokabel-Generierung (20 Wörter):</strong><br>
-                  • Input (Prompt): ~500 Tokens -> $0,000075<br>
-                  • Output (JSON): ~1.500 Tokens -> $0,000900<br>
-                  • <strong>Gesamt pro Session: $0,000975 (ca. 0,1 Cent!)</strong>
-                </li>
-                <li><strong>Skalierungs-Beispiel für Schulen:</strong><br>
-                  • 1 Schüler (30 Sets/Monat): <strong>$0,029 (ca. 3 Cent)</strong> / Monat<br>
-                  • 1.000 Schüler / Jahr (360k Abfragen): <strong>$351,00 / Jahr</strong>
-                </li>
+                <li><strong>Aufgabe:</strong> Entwicklung der REST-API Endpunkte, OpenAI-Schnittstelle zur Wortgenerierung und Datenbank-Anbindung.</li>
+                <li><strong>Zuständig:</strong> Boris Bulatov</li>
+                <li><strong>Erfasste Arbeitszeit:</strong> <strong>12 Stunden</strong></li>
+                <li><strong>Details:</strong> Endpunkte für `/health`, `/words`, `/topics` und `/practice` zur Generierung und Speicherung in der Datenbank.</li>
               </ul>
             </div>
 
-            <!-- SCHULUNG DETAILS -->
-            <div class="card cost-detail-card" id="details-schulung" style="display: none;">
+            <!-- DATABASE DETAILS -->
+            <div class="card cost-detail-card" id="details-database" style="display: none;">
               <div class="card-title" style="color: var(--color-accent);">
-                <i class="fa-solid fa-chalkboard-user"></i>
-                <span>Schulungskosten: 0 € (Eigenleistung)</span>
+                <i class="fa-solid fa-database"></i>
+                <span>Datenbank & ERM-Doku</span>
               </div>
               <ul class="bullet-list" style="font-size: 0.85rem; margin-bottom: 0;">
-                <li><strong>Multiplikatoren-Modell:</strong><br>
-                  • Die 3 Azubis führen die Einführungsschulung für Lehrer und Admins selbst durch.<br>
-                  • <strong>Externe Beratungsgebühren: 0 €</strong>
-                </li>
-                <li><strong>Dokumentation & Lehrmaterial:</strong><br>
-                  • Erstellung digitaler Leitfäden (PDF) und Kurztutorials durch das Projektteam während der Arbeitszeit.<br>
-                  • <strong>Druck- und Materialkosten: 0 €</strong> (rein digital).
-                </li>
+                <li><strong>Aufgabe:</strong> Entwurf des relationalen Datenbankschemas, ER-Modellierung, Tabellenbeziehungen (Topics, Vocabulary, Users, Sessions) und Dokumentation.</li>
+                <li><strong>Zuständig:</strong> Hasan Ateş</li>
+                <li><strong>Erfasste Arbeitszeit:</strong> <strong>6 Stunden</strong></li>
+                <li><strong>Details:</strong> Erstellung des ER-Diagramms (ERM) zur Abbildung der Tabellen-Beziehungen und Sicherstellung der referentiellen Integrität.</li>
               </ul>
             </div>
 
-            <!-- WARTUNG DETAILS -->
-            <div class="card cost-detail-card" id="details-wartung" style="display: none;">
+            <!-- PRESENTATION DETAILS -->
+            <div class="card cost-detail-card" id="details-presentation" style="display: none;">
               <div class="card-title" style="color: var(--color-primary);">
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-                <span>Wartung & Support: Intern</span>
+                <i class="fa-solid fa-display"></i>
+                <span>Abschlusspräsentation</span>
               </div>
               <ul class="bullet-list" style="font-size: 0.85rem; margin-bottom: 0;">
-                <li><strong>Interner IT-Support:</strong><br>
-                  • Übergabe an das interne Schul-IT-Team oder die Ausbildungsabteilung nach Projektabschluss.<br>
-                  • <strong>Externe Support-Verträge: 0 €</strong>
-                </li>
-                <li><strong>Fehlerbehebung (Bugfixing):</strong><br>
-                  • Im Rahmen der regulären Betriebszeiten oder durch Folgeprojekte anderer Auszubildender.<br>
-                  • <strong>Zusatzkosten: 0 €</strong>
-                </li>
+                <li><strong>Aufgabe:</strong> Konzept, Design, Strukturierung und Erstellung dieser interaktiven HTML-Präsentation.</li>
+                <li><strong>Zuständig:</strong> Hasan Ateş</li>
+                <li><strong>Erfasste Arbeitszeit:</strong> <strong>8 Stunden</strong></li>
+                <li><strong>Details:</strong> Integration der Projekt-Recherche, der BWL-Stundenanalyse, App-Screenshots und interaktiver Demos (Karteikarten-Flip).</li>
               </ul>
             </div>
 
