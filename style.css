@@ -877,3 +877,63 @@ ul.bullet-list li strong {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Cost Table Tab Selection */
+.cost-row {
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  border-left: 3px solid transparent;
+}
+
+.cost-row:hover {
+  background: rgba(255, 255, 255, 0.02) !important;
+  border-left-color: rgba(99, 102, 241, 0.4);
+}
+
+.cost-row.active {
+  background: rgba(99, 102, 241, 0.08) !important;
+  border-left-color: var(--color-primary);
+}
+
+.cost-row td {
+  transition: var(--transition-smooth);
+}
+
+.cost-row.active td {
+  color: #fff;
+}
+
+.cost-row .fa-chevron-right {
+  opacity: 0.1;
+  transform: translateX(-5px);
+  transition: var(--transition-smooth);
+}
+
+.cost-row:hover .fa-chevron-right,
+.cost-row.active .fa-chevron-right {
+  opacity: 1;
+  transform: translateX(0);
+  color: var(--color-primary);
+}
+
+.cost-detail-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transform: translateY(10px);
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cost-detail-card.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+

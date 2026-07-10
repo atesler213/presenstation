@@ -179,6 +179,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Cost row tab switcher
+  const costRows = document.querySelectorAll('.cost-row');
+  const costDetailCards = document.querySelectorAll('.cost-detail-card');
+
+  costRows.forEach(row => {
+    row.addEventListener('click', () => {
+      // Deactivate all rows
+      costRows.forEach(r => r.classList.remove('active'));
+      // Activate clicked row
+      row.classList.add('active');
+
+      const target = row.getAttribute('data-cost-target');
+      
+      // Deactivate all cards
+      costDetailCards.forEach(card => {
+        card.classList.remove('active');
+        card.style.display = 'none';
+      });
+
+      // Activate target card
+      const targetCard = document.getElementById(`details-${target}`);
+      if (targetCard) {
+        targetCard.style.display = 'flex';
+        // Force reflow for CSS transition
+        void targetCard.offsetWidth;
+        targetCard.classList.add('active');
+      }
+    });
+  });
+
   // Initialize
   updateSlides();
 });

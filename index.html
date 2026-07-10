@@ -195,12 +195,13 @@
       <section class="slide" data-slide-id="4">
         <header class="slide-header">
           <span class="slide-category">03. BWL-Analyse</span>
-          <h2 class="slide-title">Wirtschaftliche Aspekte: Kostenanalyse (GPT-4o mini)</h2>
+          <h2 class="slide-title">Wirtschaftliche Aspekte: Kostenanalyse (3-Azubi Projekt)</h2>
         </header>
         <div class="grid-2col equal animate-slide-up delay-1" style="height: calc(100% - 4.5rem); align-items: start;">
           <div>
-            <p style="margin-bottom: 1rem; font-size: 0.9rem;">
-              Die wirtschaftliche Rentabilität eines KI-Systems hängt stark von den Entwicklungs-, Integrations- und laufenden Betriebskosten ab.
+            <p style="margin-bottom: 0.8rem; font-size: 0.85rem;">
+              Die wirtschaftliche Rentabilität eines KI-Systems hängt stark von den Entwicklungs-, Integrations- und laufenden Betriebskosten ab. 
+              <strong>(Klicken Sie auf eine Zeile für Details)</strong>
             </p>
             <table class="cost-table">
               <thead>
@@ -208,61 +209,146 @@
                   <th>Kategorie</th>
                   <th>Art</th>
                   <th>Kosten (Est.)</th>
-                  <th>Kostentreiber</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr class="cost-row active" data-cost-target="capex">
                   <td><strong>CapEx (Entwicklung)</strong></td>
                   <td><span class="cost-badge cap">Einmalig</span></td>
-                  <td><strong>~12.000 €</strong></td>
-                  <td>Fullstack Dev, UI/UX Design, Initial Setup.</td>
+                  <td><strong>0 €</strong></td>
+                  <td><i class="fa-solid fa-chevron-right"></i></td>
                 </tr>
-                <tr>
+                <tr class="cost-row" data-cost-target="hosting">
                   <td><strong>OpEx (Hosting)</strong></td>
                   <td><span class="cost-badge op">Laufend</span></td>
-                  <td><strong>~35 € / Mo.</strong></td>
-                  <td>Vercel (Frontend), Render (Backend), Cloud DB.</td>
+                  <td><strong>~5 € / Mo.</strong></td>
+                  <td><i class="fa-solid fa-chevron-right"></i></td>
                 </tr>
-                <tr>
+                <tr class="cost-row" data-cost-target="api">
+                  <td><strong>API-Gebühren</strong></td>
+                  <td><span class="cost-badge op">Laufend</span></td>
+                  <td><strong>~0,1 Cent</strong></td>
+                  <td><i class="fa-solid fa-chevron-right"></i></td>
+                </tr>
+                <tr class="cost-row" data-cost-target="schulung">
                   <td><strong>Schulung (Setup)</strong></td>
                   <td><span class="cost-badge school">Einmalig</span></td>
-                  <td><strong>~700 €</strong></td>
-                  <td>Lehrer-Workshops, Handbücher & Dokumentation.</td>
+                  <td><strong>0 €</strong></td>
+                  <td><i class="fa-solid fa-chevron-right"></i></td>
                 </tr>
-                <tr>
+                <tr class="cost-row" data-cost-target="wartung">
                   <td><strong>Wartung & Support</strong></td>
                   <td><span class="cost-badge op">Laufend</span></td>
-                  <td><strong>~400 € / Mo.</strong></td>
-                  <td>Fehlerbehebung, IT-Support Retainer, Backups.</td>
+                  <td><strong>0 €</strong></td>
+                  <td><i class="fa-solid fa-chevron-right"></i></td>
                 </tr>
               </tbody>
             </table>
           </div>
           
-          <div class="card" style="border-color: rgba(99, 102, 241, 0.3); background: rgba(99, 102, 241, 0.02); height: 100%; display: flex; flex-direction: column; justify-content: center;">
-            <div class="card-title" style="color: var(--color-accent);">
-              <i class="fa-solid fa-calculator"></i>
-              <span>GPT-4o mini API-Kostenkalkulation</span>
+          <div style="position: relative; height: 100%; width: 100%;">
+            
+            <!-- CAPEX DETAILS -->
+            <div class="card cost-detail-card active" id="details-capex">
+              <div class="card-title" style="color: var(--color-primary);">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span>CapEx: 3-Azubi Eigenentwicklung</span>
+              </div>
+              <ul class="bullet-list" style="font-size: 0.85rem; margin-bottom: 0;">
+                <li><strong>Eigenentwicklung im Team:</strong><br>
+                  • Projektarbeit von 3 Auszubildenden (Fachinformatiker Systemintegration/Anwendungsentwicklung) im 2. Lehrjahr.<br>
+                  • <strong>Externe Entwicklerkosten: 0 €</strong>
+                </li>
+                <li><strong>Infrastruktur & Hardware:</strong><br>
+                  • Nutzung bestehender Firmenrechner & Schul-PCs.<br>
+                  • Kostenfreie Open-Source Software (VS Code, Git, Python).
+                </li>
+                <li><strong>Zusätzliche Anschaffungskosten: 0 €</strong><br>
+                  • Einziger Aufwand ist die reguläre Ausbildungszeit (ohne Zusatzkosten).
+                </li>
+              </ul>
             </div>
-            <ul class="bullet-list" style="font-size: 0.85rem; margin-bottom: 0;">
-              <li><strong>Modellpreise (OpenAI):</strong><br>
-                • Input-Tokens: <strong>$0,15</strong> per 1M Tokens (~750k Wörter)<br>
-                • Output-Tokens: <strong>$0,60</strong> per 1M Tokens
-              </li>
-              <li><strong>Kosten pro Vokabel-Generierung (20 Wörter):</strong><br>
-                • Input (Prompt): ~500 Tokens -> $0,000075<br>
-                • Output (JSON): ~1.500 Tokens -> $0,000900<br>
-                • <strong>Gesamt pro Session: $0,000975 (ca. 0,1 Cent!)</strong>
-              </li>
-              <li><strong>Skalierungs-Beispiel für Schulen:</strong><br>
-                • 1 Schüler (30 Sets/Monat): <strong>$0,029 (ca. 3 Cent)</strong> / Monat<br>
-                • 1.000 Schüler / Jahr (360k Abfragen): <strong>$351,00 / Jahr</strong>
-              </li>
-            </ul>
-            <p style="font-size: 0.8rem; color: var(--color-accent); font-weight: 600; margin-top: 0.5rem; text-align: center;">
-              Ergebnis: Extrem hohe Wirtschaftlichkeit & Skalierbarkeit!
-            </p>
+
+            <!-- HOSTING DETAILS -->
+            <div class="card cost-detail-card" id="details-hosting" style="display: none;">
+              <div class="card-title" style="color: var(--color-accent);">
+                <i class="fa-solid fa-server"></i>
+                <span>OpEx: Kostengünstiges Hosting</span>
+              </div>
+              <ul class="bullet-list" style="font-size: 0.85rem; margin-bottom: 0;">
+                <li><strong>Frontend Hosting (Vercel):</strong><br>
+                  • Deployment des React Frontends auf dem <strong>Vercel Hobby Plan: 0 € / Monat</strong>.
+                </li>
+                <li><strong>Backend API & DB (Railway / Render):</strong><br>
+                  • Deployment des FastAPI Backends + SQLite Datenbank auf Render (Hobby Instance): <strong>~5 € / Monat</strong>.
+                </li>
+                <li><strong>Domain & DNS:</strong><br>
+                  • Nutzung einer Subdomain der Schule/des Ausbildungsbetriebs: <strong>0 €</strong>.
+                </li>
+                <li><strong>Gesamtes Cloud-Hosting: ~5 € / Monat (extrem günstig)</strong></li>
+              </ul>
+            </div>
+
+            <!-- API DETAILS -->
+            <div class="card cost-detail-card" id="details-api" style="display: none;">
+              <div class="card-title" style="color: var(--color-secondary);">
+                <i class="fa-solid fa-calculator"></i>
+                <span>GPT-4o mini API-Kosten</span>
+              </div>
+              <ul class="bullet-list" style="font-size: 0.85rem; margin-bottom: 0;">
+                <li><strong>Modellpreise (OpenAI):</strong><br>
+                  • Input-Tokens: <strong>$0,15</strong> per 1M Tokens (~750k Wörter)<br>
+                  • Output-Tokens: <strong>$0,60</strong> per 1M Tokens
+                </li>
+                <li><strong>Kosten pro Vokabel-Generierung (20 Wörter):</strong><br>
+                  • Input (Prompt): ~500 Tokens -> $0,000075<br>
+                  • Output (JSON): ~1.500 Tokens -> $0,000900<br>
+                  • <strong>Gesamt pro Session: $0,000975 (ca. 0,1 Cent!)</strong>
+                </li>
+                <li><strong>Skalierungs-Beispiel für Schulen:</strong><br>
+                  • 1 Schüler (30 Sets/Monat): <strong>$0,029 (ca. 3 Cent)</strong> / Monat<br>
+                  • 1.000 Schüler / Jahr (360k Abfragen): <strong>$351,00 / Jahr</strong>
+                </li>
+              </ul>
+            </div>
+
+            <!-- SCHULUNG DETAILS -->
+            <div class="card cost-detail-card" id="details-schulung" style="display: none;">
+              <div class="card-title" style="color: var(--color-accent);">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Schulungskosten: 0 € (Eigenleistung)</span>
+              </div>
+              <ul class="bullet-list" style="font-size: 0.85rem; margin-bottom: 0;">
+                <li><strong>Multiplikatoren-Modell:</strong><br>
+                  • Die 3 Azubis führen die Einführungsschulung für Lehrer und Admins selbst durch.<br>
+                  • <strong>Externe Beratungsgebühren: 0 €</strong>
+                </li>
+                <li><strong>Dokumentation & Lehrmaterial:</strong><br>
+                  • Erstellung digitaler Leitfäden (PDF) und Kurztutorials durch das Projektteam während der Arbeitszeit.<br>
+                  • <strong>Druck- und Materialkosten: 0 €</strong> (rein digital).
+                </li>
+              </ul>
+            </div>
+
+            <!-- WARTUNG DETAILS -->
+            <div class="card cost-detail-card" id="details-wartung" style="display: none;">
+              <div class="card-title" style="color: var(--color-primary);">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span>Wartung & Support: Intern</span>
+              </div>
+              <ul class="bullet-list" style="font-size: 0.85rem; margin-bottom: 0;">
+                <li><strong>Interner IT-Support:</strong><br>
+                  • Übergabe an das interne Schul-IT-Team oder die Ausbildungsabteilung nach Projektabschluss.<br>
+                  • <strong>Externe Support-Verträge: 0 €</strong>
+                </li>
+                <li><strong>Fehlerbehebung (Bugfixing):</strong><br>
+                  • Im Rahmen der regulären Betriebszeiten oder durch Folgeprojekte anderer Auszubildender.<br>
+                  • <strong>Zusatzkosten: 0 €</strong>
+                </li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </section>
