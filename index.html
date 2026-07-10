@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lexio - KI im Bildungswesen | Abschlusspräsentation</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome Icons for modern aesthetic -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Animated Background Orbs -->
+  <div class="glow-bg">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Quick Navigation Menu -->
+  <aside class="quick-menu" id="quick-menu">
+    <div class="quick-menu-header">
+      <span class="quick-menu-title"><i class="fa-solid fa-compass"></i> Folienübersicht</span>
+      <button class="quick-menu-close" id="quick-menu-close" aria-label="Schließen"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="quick-menu-list" id="quick-menu-list">
+      <!-- Generated dynamically in script.js -->
+    </ul>
+  </aside>
+
+  <!-- Main Presentation Container -->
+  <div class="presentation-container">
+
+    <!-- Progress Bar at the top of the deck -->
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- Slides Wrapper -->
+    <div class="slides-wrapper">
+
+      <!-- SLIDE 1: TITEL -->
+      <section class="slide title-slide active" data-slide-id="0">
+        <div class="title-badge animate-slide-up">Gruppe 1: KI im Bildungswesen</div>
+        <h1 class="main-title animate-slide-up delay-1">Künstliche Intelligenz im Bildungswesen</h1>
+        <p class="subtitle animate-slide-up delay-2">
+          Wirtschaftliche Auswirkungen & praktische Anwendung eines intelligenten Vokabeltrainers (Lexio)
+        </p>
+        
+        <div class="meta-info animate-slide-up delay-3">
+          <div class="meta-item">
+            <strong>Projektarbeit zu BWL & Programmieren</strong>
+            Fachinformatik – 2. Lehrjahr – BWL
+          </div>
+          <div class="meta-item">
+            <strong>Thema der Arbeit</strong>
+            KI in Unternehmen & Bildung
+          </div>
+          <div class="meta-item">
+            <strong>Prototyp</strong>
+            Lexio Vokabeltrainer
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 2: PROBLEMSTELLUNG -->
+      <section class="slide" data-slide-id="1">
+        <header class="slide-header">
+          <span class="slide-category">01. Problemstellung</span>
+          <h2 class="slide-title">Die Herausforderung beim Sprachenlernen</h2>
+        </header>
+        <div class="grid-2col equal">
+          <div class="card animate-slide-up delay-1">
+            <div class="card-title">
+              <i class="fa-solid fa-triangle-exclamation" style="color: #ef4444;"></i>
+              <span>Traditionelles Vokabellernen</span>
+            </div>
+            <ul class="bullet-list">
+              <li><strong>Statische Lehrbücher:</strong> Feste, oft unpersönliche Themen ohne Bezug zu aktuellen Schülerinteressen.</li>
+              <li><strong>Kein Kontext:</strong> Vokabeln werden isoliert gelernt, was die langfristige Einprägung erschwert.</li>
+              <li><strong>Aufwand für Lehrkräfte:</strong> Manuelle Erstellung von Übungen und Korrekturen kostet wertvolle Stunden.</li>
+              <li><strong>Mangelnde Adaptivität:</strong> Keine Anpassung an unterschiedliche Lerngeschwindigkeiten in einer Klasse.</li>
+            </ul>
+          </div>
+          <div class="card animate-slide-up delay-2" style="border-color: rgba(20, 184, 166, 0.3); background: rgba(20, 184, 166, 0.02);">
+            <div class="card-title">
+              <i class="fa-solid fa-circle-check" style="color: var(--color-accent);"></i>
+              <span>Die KI-Lösung (Lexio)</span>
+            </div>
+            <ul class="bullet-list">
+              <li><strong>On-Demand Generierung:</strong> Vokabeln werden dynamisch zu jedem beliebigen Wunschthema der Schüler generiert.</li>
+              <li><strong>Automatisches Feedback:</strong> Direkte Korrektur und verständliche Kontexterklärungen in Echtzeit.</li>
+              <li><strong>Effiziente Verwaltung:</strong> Lehrer können Vokabelsets per Klick erstellen und Schülerleistungen direkt überblicken.</li>
+              <li><strong>Maximale Personalisierung:</strong> Die KI wählt Wörter, die zum Niveau und Lerntempo des Einzelnen passen.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 3: RECHERCHE: KI IM BILDUNGSWESEN -->
+      <section class="slide" data-slide-id="2">
+        <header class="slide-header">
+          <span class="slide-category">02. Recherche</span>
+          <h2 class="slide-title">Einsatzbereiche & Marktanalyse</h2>
+        </header>
+        <div class="grid-2col">
+          <div class="animate-slide-up delay-1">
+            <ul class="bullet-list">
+              <li><strong>Was ist unser Themenbereich?</strong><br>
+                Einsatz von KI im Bildungswesen, speziell fokussiert auf KI-gestützte Sprachlernplattformen und personalisierte Tutoren.
+              </li>
+              <li><strong>Wo wird KI dort konkret eingesetzt?</strong><br>
+                Generierung von Lerninhalten (Sätze, Vokabeln, Übersetzungen), Analyse des Lernstands (Spaced Repetition) und Konversations-Chatbots.
+              </li>
+              <li><strong>Welche Unternehmen nutzen diese Technologie bereits?</strong><br>
+                <ul>
+                  <li><em>Duolingo:</em> Nutzt GPT-4 für "Duolingo Max" (Features: Rollenspiele und Erklärungen von Fehlern).</li>
+                  <li><em>Quizlet:</em> Bietet den KI-Lerncoach "Q-Chat" zur Abfrage und Erklärung.</li>
+                  <li><em>Babbel:</em> Setzt KI zur Spracherkennung und Ausspracheprüfung ein.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="grid-2col-right animate-slide-up delay-2">
+            <div class="card">
+              <div class="card-title">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Marktführer im Vergleich</span>
+              </div>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">
+                Unternehmen, die bereits KI-Technologien in ihre Sprachlernlösungen integriert haben:
+              </p>
+              <div class="benefit-box">
+                <div class="benefit-icon"><i class="fa-brands fa-envira"></i></div>
+                <div class="benefit-content">
+                  <h4>Duolingo Max</h4>
+                  <p>GPT-4 basierte Dialogsimulationen und Fehleranalyse.</p>
+                </div>
+              </div>
+              <div class="benefit-box">
+                <div class="benefit-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="benefit-content">
+                  <h4>Quizlet Q-Chat</h4>
+                  <p>Interaktiver Tutor, der Sokratische Fragen stellt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 4: FUNKTIONSWEISE & RISIKEN -->
+      <section class="slide" data-slide-id="3">
+        <header class="slide-header">
+          <span class="slide-category">02. Recherche</span>
+          <h2 class="slide-title">Technik, Chancen & Risiken</h2>
+        </header>
+        <div class="grid-2col equal">
+          <div class="card animate-slide-up delay-1">
+            <div class="card-title">
+              <i class="fa-solid fa-gears"></i>
+              <span>Funktionsweise (vereinfacht)</span>
+            </div>
+            <p style="font-size: 0.95rem; margin-bottom: 1rem;">
+              Große Sprachmodelle (LLMs) sagen statistisch das nächste logische Wort voraus, basierend auf Milliarden gelesener Texte.
+            </p>
+            <p style="font-size: 0.95rem; margin-bottom: 1rem;">
+              Durch gezieltes <strong>Prompting</strong> im Backend weisen wir die KI an, Vokabeln im strukturierten <strong>JSON-Format</strong> auszugeben:
+            </p>
+            <pre style="background: rgba(0,0,0,0.3); padding: 0.8rem; border-radius: 8px; font-family: monospace; font-size: 0.75rem; color: var(--color-accent); border: 1px solid rgba(255,255,255,0.05);">
+{
+  "source_text": "airport",
+  "target_text": "Flughafen",
+  "topic": "Travel"
+}</pre>
+          </div>
+          <div class="card animate-slide-up delay-2">
+            <div class="card-title">
+              <i class="fa-solid fa-scale-balanced"></i>
+              <span>Chancen & Risiken</span>
+            </div>
+            <div style="margin-bottom: 1rem;">
+              <strong style="color: var(--color-accent); display: block; margin-bottom: 0.2rem;"><i class="fa-solid fa-plus-circle"></i> Chancen:</strong>
+              <p style="font-size: 0.88rem;">Unbegrenzte Themenauswahl, sofortiges Feedback, hohe Personalisierung und automatische Erstellung strukturierter Lerninhalte.</p>
+            </div>
+            <div>
+              <strong style="color: #ef4444; display: block; margin-bottom: 0.2rem;"><i class="fa-solid fa-minus-circle"></i> Risiken:</strong>
+              <p style="font-size: 0.88rem;">Potenzielle Übersetzungsfehler ("Halluzinationen"), fehlender didaktischer Faden und Datenschutzaspekte bei externer API-Nutzung (OpenAI).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 5: BWL-ANALYSE: KOSTEN -->
+      <section class="slide" data-slide-id="4">
+        <header class="slide-header">
+          <span class="slide-category">03. BWL-Analyse</span>
+          <h2 class="slide-title">Wirtschaftliche Aspekte: Kostenanalyse (GPT-4o mini)</h2>
+        </header>
+        <div class="grid-2col equal animate-slide-up delay-1" style="height: calc(100% - 4.5rem); align-items: start;">
+          <div>
+            <p style="margin-bottom: 1rem; font-size: 0.9rem;">
+              Die wirtschaftliche Rentabilität eines KI-Systems hängt stark von den Entwicklungs-, Integrations- und laufenden Betriebskosten ab.
+            </p>
+            <table class="cost-table">
+              <thead>
+                <tr>
+                  <th>Kategorie</th>
+                  <th>Art</th>
+                  <th>Kostentreiber</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>CapEx (Entwicklung)</strong></td>
+                  <td><span class="cost-badge cap">Einmalig</span></td>
+                  <td>Prototyping, Setup.</td>
+                </tr>
+                <tr>
+                  <td><strong>OpEx (Hosting)</strong></td>
+                  <td><span class="cost-badge op">Laufend</span></td>
+                  <td>Cloud-Server, DB.</td>
+                </tr>
+                <tr>
+                  <td><strong>API-Gebühren</strong></td>
+                  <td><span class="cost-badge op">Laufend</span></td>
+                  <td>OpenAI Token-Kosten.</td>
+                </tr>
+                <tr>
+                  <td><strong>Schulung/Support</strong></td>
+                  <td><span class="cost-badge school">Einmalig</span></td>
+                  <td>Dozenten-Einarbeitung.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="card" style="border-color: rgba(99, 102, 241, 0.3); background: rgba(99, 102, 241, 0.02); height: 100%; display: flex; flex-direction: column; justify-content: center;">
+            <div class="card-title" style="color: var(--color-accent);">
+              <i class="fa-solid fa-calculator"></i>
+              <span>GPT-4o mini API-Kostenkalkulation</span>
+            </div>
+            <ul class="bullet-list" style="font-size: 0.85rem; margin-bottom: 0;">
+              <li><strong>Modellpreise (OpenAI):</strong><br>
+                • Input-Tokens: <strong>$0,15</strong> per 1M Tokens (~750k Wörter)<br>
+                • Output-Tokens: <strong>$0,60</strong> per 1M Tokens
+              </li>
+              <li><strong>Kosten pro Vokabel-Generierung (20 Wörter):</strong><br>
+                • Input (Prompt): ~500 Tokens -> $0,000075<br>
+                • Output (JSON): ~1.500 Tokens -> $0,000900<br>
+                • <strong>Gesamt pro Session: $0,000975 (ca. 0,1 Cent!)</strong>
+              </li>
+              <li><strong>Skalierungs-Beispiel für Schulen:</strong><br>
+                • 1 Schüler (30 Sets/Monat): <strong>$0,029 (ca. 3 Cent)</strong> / Monat<br>
+                • 1.000 Schüler / Jahr (360k Abfragen): <strong>$351,00 / Jahr</strong>
+              </li>
+            </ul>
+            <p style="font-size: 0.8rem; color: var(--color-accent); font-weight: 600; margin-top: 0.5rem; text-align: center;">
+              Ergebnis: Extrem hohe Wirtschaftlichkeit & Skalierbarkeit!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 6: BWL-ANALYSE: NUTZEN -->
+      <section class="slide" data-slide-id="5">
+        <header class="slide-header">
+          <span class="slide-category">03. BWL-Analyse</span>
+          <h2 class="slide-title">Wirtschaftliche Aspekte: Nutzenanalyse</h2>
+        </header>
+        <div class="grid-2col equal">
+          <div class="animate-slide-up delay-1">
+            <div class="benefit-box">
+              <div class="benefit-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="benefit-content">
+                <h4>Hohe Zeitersparnis</h4>
+                <p>Lehrkräfte sparen ca. 90% Zeit bei der Erstellung individueller Vokabeltests. Die KI generiert fertige Lernsets in Sekunden statt in Stunden.</p>
+              </div>
+            </div>
+            <div class="benefit-box">
+              <div class="benefit-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+              <div class="benefit-content">
+                <h4>Skalierbarkeit & Effizienz</h4>
+                <p>Ein einmal entwickeltes System kann von beliebig vielen Klassen und Schulen gleichzeitig genutzt werden, ohne dass proportionale Kosten entstehen.</p>
+              </div>
+            </div>
+          </div>
+          <div class="animate-slide-up delay-2">
+            <div class="benefit-box">
+              <div class="benefit-icon"><i class="fa-solid fa-coins"></i></div>
+              <div class="benefit-content">
+                <h4>Umsatzsteigerungspotenzial</h4>
+                <p>Moderne KI-Features erhöhen die Attraktivität der Plattform. Dies ermöglicht höhere B2C-Abonnementpreise und attraktive B2B-Schullizenzen.</p>
+              </div>
+            </div>
+            <div class="benefit-box">
+              <div class="benefit-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="benefit-content">
+                <h4>Fehlerreduktion</h4>
+                <p>Durch standardisierte APIs und automatisierte Wortprüfungen werden manuelle Schreibfehler in Vokabellisten drastisch minimiert.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 7: TECHNISCHER PROTOTYP: LEXIO -->
+      <section class="slide" data-slide-id="6">
+        <header class="slide-header">
+          <span class="slide-category">04. Programmierung</span>
+          <h2 class="slide-title">Der Prototyp: Lexio Vokabeltrainer</h2>
+        </header>
+        <div class="grid-2col">
+          <div class="animate-slide-up delay-1">
+            <p style="margin-bottom: 1rem;">
+              Lexio ist eine moderne Web-Anwendung, die die Anforderungen an die Programmierung vollständig erfüllt:
+            </p>
+            <ul class="bullet-list">
+              <li><span class="check-icon">✓</span><strong>Eingaben verarbeiten:</strong> Der Benutzer gibt sein Wunschthema und Sprachen an.</li>
+              <li><span class="check-icon">✓</span><strong>Daten logisch auswerten:</strong> Das FastAPI-Backend fragt die GPT-API an, validiert das Ergebnis und speichert es in einer SQLite/PostgreSQL-Datenbank.</li>
+              <li><span class="check-icon">✓</span><strong>Ergebnis ausgeben:</strong> Der Benutzer lernt die Wörter via interaktiven Flashcards.</li>
+              <li><span class="check-icon">✓</span><strong>Modulare Architektur:</strong> Feature-Sliced Design (FSD) im React-Frontend.</li>
+              <li><span class="check-icon">✓</span><strong>Offline-Modus:</strong> Mock Service Worker (MSW) emuliert API-Anfragen für Tests.</li>
+            </ul>
+          </div>
+          <div class="animate-slide-up delay-2">
+            <div class="card" style="text-align: center;">
+              <div class="card-title" style="justify-content: center;">
+                <i class="fa-solid fa-code"></i>
+                <span>Technologie-Stack</span>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-top: 1rem;">
+                <span class="cost-badge op">React 19</span>
+                <span class="cost-badge op">TypeScript</span>
+                <span class="cost-badge op">Vite</span>
+                <span class="cost-badge op">Zustand</span>
+                <span class="cost-badge cap">FastAPI</span>
+                <span class="cost-badge cap">SQLAlchemy</span>
+                <span class="cost-badge school">MSW 2.0</span>
+              </div>
+              <p style="font-size: 0.8rem; margin-top: 1.5rem; text-align: left; color: var(--color-text-muted);">
+                Das System trennt strikt Präsentationsschicht (React) und Logikschicht (FastAPI) über RESTful-APIs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 8: PROGRAMM-DEMO -->
+      <section class="slide" data-slide-id="7">
+        <header class="slide-header">
+          <span class="slide-category">05. Programm-Demo</span>
+          <h2 class="slide-title">Lexio Benutzeroberfläche (Screenshots)</h2>
+        </header>
+        <div class="grid-2col">
+          <!-- Screenshots Grid -->
+          <div class="screenshot-grid animate-slide-up delay-1">
+            <div class="screenshot-card">
+              <div class="window-header">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+                <span class="window-title">/learn</span>
+              </div>
+              <div class="screenshot-img-wrapper">
+                <img src="assets/learn.png" alt="Generierungs-Formular" class="screenshot-img">
+              </div>
+              <div class="screenshot-caption">Lern-Dashboard & Themen-Eingabe</div>
+            </div>
+
+            <div class="screenshot-card">
+              <div class="window-header">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+                <span class="window-title">/vocabulary</span>
+              </div>
+              <div class="screenshot-img-wrapper">
+                <img src="assets/vocabulary.png" alt="Vokabel-Themen" class="screenshot-img">
+              </div>
+              <div class="screenshot-caption">Übersicht aller generierten Themen</div>
+            </div>
+
+            <div class="screenshot-card">
+              <div class="window-header">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+                <span class="window-title">/vocabulary/Travel</span>
+              </div>
+              <div class="screenshot-img-wrapper">
+                <img src="assets/topic_words.png" alt="Wortliste" class="screenshot-img">
+              </div>
+              <div class="screenshot-caption">Wortliste des Themas "Travel"</div>
+            </div>
+
+            <div class="screenshot-card">
+              <div class="window-header">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+                <span class="window-title">/cards</span>
+              </div>
+              <div class="screenshot-img-wrapper">
+                <img src="assets/cards.png" alt="Karteikarten-Modus" class="screenshot-img">
+              </div>
+              <div class="screenshot-caption">Interaktiver Karteikarten-Modus</div>
+            </div>
+          </div>
+
+          <!-- Interactive elements side -->
+          <div class="animate-slide-up delay-2" style="display: flex; flex-direction: column; justify-content: center;">
+            <p style="margin-bottom: 1rem; font-size: 0.95rem; text-align: center;">
+              <strong>Interaktive Vokabelkarte zum Testen (Klicken zum Drehen):</strong>
+            </p>
+            
+            <!-- Interactive Flip Card Container -->
+            <div class="flip-card-container">
+              <div class="flip-card" id="demo-flip-card">
+                <div class="flip-card-front">
+                  <div class="flip-label">Englisch</div>
+                  <div class="flip-text">artificial intelligence</div>
+                  <div class="flip-hint">Klicke zum Umdrehen</div>
+                </div>
+                <div class="flip-card-back">
+                  <div class="flip-label">Deutsch</div>
+                  <div class="flip-text">künstliche Intelligenz</div>
+                  <div class="flip-hint">Klicke zum Umdrehen</div>
+                </div>
+              </div>
+            </div>
+            
+            <p style="font-size: 0.85rem; color: var(--color-text-muted); text-align: center; margin-top: 1rem;">
+              Die obige Karte demonstriert das Lern-Prinzip von Lexio direkt in dieser Präsentation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 9: FAZIT & AUSBLICK -->
+      <section class="slide" data-slide-id="8">
+        <header class="slide-header">
+          <span class="slide-category">06. Fazit</span>
+          <h2 class="slide-title">Zusammenfassung & Ausblick</h2>
+        </header>
+        <div class="grid-2col equal">
+          <div class="card animate-slide-up delay-1">
+            <div class="card-title">
+              <i class="fa-solid fa-flag-checkered"></i>
+              <span>Fazit</span>
+            </div>
+            <ul class="bullet-list">
+              <li><strong>Hoher Mehrwert:</strong> KI-gestützte Tools wie Lexio revolutionieren das Vokabellernen durch On-Demand Personalisierung.</li>
+              <li><strong>Wirtschaftlicher Vorteil:</strong> Trotz API-Nutzungsgebühren überwiegt der Nutzen durch enorme Zeitersparnis bei Dozenten und hohe Skalierbarkeit.</li>
+              <li><strong>Technisch machbar:</strong> Die Kombination aus React und FastAPI bietet eine performante, zukunftssichere Basis für Bildungs-Apps.</li>
+            </ul>
+          </div>
+          <div class="card animate-slide-up delay-2" style="border-color: rgba(99, 102, 241, 0.3);">
+            <div class="card-title">
+              <i class="fa-solid fa-compass-drafting" style="color: var(--color-primary);"></i>
+              <span>Zukunftsausblick</span>
+            </div>
+            <ul class="bullet-list">
+              <li><strong>Spracherkennung (STT):</strong> Integration von KI-Modellen (z.B. OpenAI Whisper) zur Analyse und Verbesserung der Aussprache.</li>
+              <li><strong>Lokale KI-Modelle:</strong> Unterstützung von Offline-Lernen durch Integration schlanker, lokaler LLMs (z.B. Llama 3) direkt auf dem Endgerät.</li>
+              <li><strong>Gamification:</strong> Implementierung von Erfahrungspunkten (XP), Abzeichen (Badges) und Bestenlisten zur Erhöhung der Schülermotivation.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Presentation Footer with controls -->
+    <footer class="presentation-footer">
+      <div class="footer-info">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menü anzeigen"><i class="fa-solid fa-bars"></i> Menü</button>
+        <span class="kb-helpers"><i class="fa-solid fa-keyboard"></i> Pfeiltasten / Leertaste</span>
+      </div>
+      <div class="controls">
+        <button class="btn-nav" id="btn-prev" aria-label="Vorherige Folie"><i class="fa-solid fa-chevron-left"></i></button>
+        <span class="slide-number" id="slide-number">1 / 9</span>
+        <div class="slide-dots" id="slide-dots">
+          <!-- Dots will be injected by script.js -->
+        </div>
+        <button class="btn-nav" id="btn-next" aria-label="Nächste Folie"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </footer>
+
+  <!-- Lightbox Overlay for Screenshots -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Schließen"><i class="fa-solid fa-xmark"></i></button>
+    <div class="lightbox-content">
+      <img src="" alt="Enlarged Screenshot" class="lightbox-img" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption">Bildunterschrift</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
